@@ -1,0 +1,22 @@
+{
+  "name": "js1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GulcanC/JS-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "hhtps://GulcanC.github.io/JS-1",
+  "bugs": {
+    "url": "https://github.com/GulcanC/JS-1/issues"
+  },
+  "dependencies": {
+    "gh-pages": "^3.2.3"
+  }
+}
