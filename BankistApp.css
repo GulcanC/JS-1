@@ -1,0 +1,327 @@
+/* BANKIST APPLICATION */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; /*💖 buna çalış 💖 */
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; /*💖 buna çalış 💖*/
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  color: rgb(45, 50, 71);
+  background-color: #f1efef;
+  height: 100vh; /*💖 buna çalış 💖*/
+  padding: 2rem; /*💖 buna çalış 💖*/
+}
+
+nav {
+  display: flex; /*💖 buna çalış 💖*/
+  justify-content: space-between; /*💖 buna çalış 💖*/
+  align-items: center;
+  padding: 0 2rem;
+}
+.welcome {
+  font-size: 1.9rem;
+  font-weight: 500;
+}
+.logo {
+  height: 5.25rem;
+}
+
+.login {
+  display: flex;
+}
+.login__input {
+  border: none;
+  padding: 0.5rem 2rem;
+  font-size: 1.6rem;
+  font-family: inherit;
+  text-align: center;
+  width: 12rem;
+  border-radius: 10rem;
+  margin-right: 1rem;
+  color: rgb(45, 50, 71);
+
+  background-image: linear-gradient(
+    to top right,
+    rgb(230, 242, 248),
+    rgb(133, 188, 224)
+  );
+  transition: all 0.5s;
+}
+
+.login__input:focus {
+  /*💖 buna çalış 💖*/
+  outline: none;
+  border: 1px solid rgb(45, 50, 71);
+}
+.login__input::placeholder {
+  /*💖 buna çalış 💖*/
+  color: rgb(92, 86, 86);
+}
+
+.login__btn {
+  border: none;
+  background: none;
+  font-size: 2.2rem;
+  color: rgb(26, 23, 23);
+  cursor: pointer; /*💖 buna çalış 💖*/
+  transition: all 0.5s; /*💖 buna çalış 💖*/
+}
+.login__btn:hover,
+.login__btn:focus,
+.btn--sort:hover,
+.btn--sort:focus {
+  outline: none;
+  color: rgb(22, 171, 240);
+}
+
+/*💖 MAIN 💖*/
+.app {
+  position: relative;
+  max-width: 100rem;
+  margin: 4rem auto;
+  display: grid; /*💖 hepsine çalış, grid, fr, opacity 💖*/
+  grid-template-columns: 4fr 3fr;
+  grid-template-rows: auto repeat(3, 15rem) auto;
+  gap: 2rem;
+  opacity: 0;
+  transition: all 1s;
+}
+
+.balance {
+  grid-column: 1 / span 2; /*💖 hepsine çalış 💖*/
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.balance__label {
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: -0.2rem;
+}
+
+.balance__date {
+  font-size: 1.4rem;
+  color: rgb(45, 50, 71);
+}
+
+.balance__value {
+  font-size: 4.5rem;
+  font-weight: 400;
+}
+
+/*💖 MOVEMENTS 💖*/
+
+.movements {
+  grid-row: 2 / span 3; /*💖 hepsine çalış 💖*/
+  background-color: rgb(226, 226, 219);
+  border-radius: 1rem;
+  overflow: scroll; /*💖 hepsine çalış 💖*/
+}
+
+.movements__row {
+  padding: 2.25rem 4rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px dashed rgb(192, 211, 236);
+}
+
+.movements__type {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: rgb(47, 49, 61);
+  padding: 0.1rem 1rem;
+  border-radius: 10rem;
+  margin-right: 2rem;
+}
+
+.movements__date {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: rgb(39, 55, 58);
+}
+
+.movements__type--deposit {
+  background-image: linear-gradient(to top left, #ade0cd, #7bfa04);
+}
+
+.movements__type--withdrawal {
+  background-image: linear-gradient(to top left, #f1d4db, #ff585f);
+}
+
+.movements__value {
+  font-size: 1.7rem;
+  margin-left: auto;
+  color: rgb(39, 55, 58);
+}
+
+/*💖 SUMMARY 💖*/
+
+.summary {
+  grid-row: 5/6; /*💖 Çalış 💖*/
+  display: flex;
+  align-items: baseline;
+  padding: 0 0.3rem;
+  margin-top: 1rem;
+}
+
+.summary__label {
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-right: 0.8rem;
+}
+
+.summary__value {
+  font-size: 2.2rem;
+  margin-right: 2.5rem;
+}
+
+.summary__value--in,
+.summary__value--interest {
+  color: #66c873;
+}
+
+.summary__value--out {
+  color: #f5465d;
+}
+
+.btn--sort {
+  margin-left: auto;
+  border: none;
+  background: none;
+  font-size: 1.3rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: rgb(51, 47, 46);
+}
+
+/*💖 OPERATIONS 💖*/
+
+.operation {
+  border-radius: 1rem;
+  padding: 3rem 4rem;
+  color: rgb(47, 54, 54);
+}
+
+.operation--transfer {
+  background-image: linear-gradient(to bottom right, #03c4ff, #e1ebf0);
+}
+
+.operation--loan {
+  background-image: linear-gradient(to bottom right, #f3e014, #e9e4d8);
+}
+
+.operation--close {
+  background-image: linear-gradient(to bottom right, #e52a5a, #ecdbdc);
+}
+
+h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.7rem;
+  font-weight: 600;
+  color: rgb(47, 54, 54);
+}
+
+.form {
+  display: grid;
+  grid-template-columns: 2.5fr 2.5fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 0.4rem 1rem;
+}
+
+.form--loan {
+  grid-template-columns: 2.5fr 1fr 2.5fr;
+}
+.form__label--loan {
+  grid-row: 2;
+}
+
+.form__input {
+  width: 100%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.4);
+  font-family: inherit;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #333;
+  padding: 0.3rem 1rem;
+  border-radius: 0.7rem;
+  transition: all 0.5s;
+}
+
+.form__input:focus {
+  outline: none;
+  background-color: rgba(217, 209, 238, 0.6);
+}
+
+.form__label {
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+.form__btn {
+  border: none;
+  border-radius: 0.7rem;
+  font-size: 1.8rem;
+  background-color: rgba(206, 216, 233, 0.8);
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.form__btn:focus {
+  outline: none;
+  background-color: rgba(206, 216, 233, 0.8);
+}
+
+.logout-timer {
+  padding: 0 0.3rem;
+  margin-top: 1.9rem;
+  text-align: right;
+  font-size: 1.25rem;
+  color: rgb(45, 50, 71);
+}
+
+.timer {
+  font-weight: 600;
+}
+footer {
+  text-align: center;
+  margin-top: 90px;
+  color: rgb(45, 50, 71);
+  background-image: linear-gradient(
+    to top right,
+    rgb(230, 242, 248),
+    rgb(133, 188, 224)
+  );
+  padding: 10px;
+  transition: all 0.5s;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 140%;
+}
+
+.instructions {
+  color: rgb(15, 16, 19);
+  border-radius: 20px;
+  background-image: linear-gradient(
+    to top right,
+    rgb(230, 242, 248),
+    rgb(133, 188, 224)
+  );
+  margin-left: 530px;
+  margin-top: 100px;
+  padding: 20;
+  box-sizing: border-box; /*💖 buna çalış 💖 */
+  text-align: center;
+  width: 50rem;
+  height: 50rem;
+}
