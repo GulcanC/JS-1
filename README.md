@@ -13,7 +13,7 @@ This is my third JavaScript Project and first advance project as a part of the p
 I was extremely excited when working on this amazing “Bankist App” that created with advance JS techniques. The content of this project rich that it includes very advanced topics like DOM elements, data transformations, map method, filter method, reduce method, chaining method, find and findIndex method, flat and flatMap method, math and rounding, …
 
 # Technologies & Techniques Used:
-*       JavaScript 
+* JavaScript 
 
 *	ES6
 
