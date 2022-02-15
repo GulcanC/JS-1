@@ -15,24 +15,24 @@ I was extremely excited when working on this amazing “Bankist App” that crea
 # Technologies & Techniques Used:
 	:small_orange_diamond:	JavaScript 
 
-	:small_orange_diamond:	ES6
+*	ES6
 
-	:small_orange_diamond:	DOM elements
+*	DOM elements
 
-	:small_orange_diamond:	Data transformations
+*	Data transformations
 
-	:small_orange_diamond:	Map method
+*	Map method
 
-	:small_orange_diamond:	Filter method
+*	Filter method
 
-	:small_orange_diamond:	Reduce method
+*	Reduce method
 
-	:small_orange_diamond:	Chaining method
+*	Chaining method
 
-	:small_orange_diamond:	Find and findIndex method
+*	Find and findIndex method
 
-	:small_orange_diamond:	Flat and flatMap method
+*	Flat and flatMap method
 
-	:small_orange_diamond:	Math and rounding
+*	Math and rounding
 
 
