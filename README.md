@@ -1,7 +1,7 @@
 # ADVANCE JAVASCRIPT PROJECT 1
 
 # Go to the Project Page
-https://gulcanc.github.io/JS-1/
+:globe_with_meridians: https://gulcanc.github.io/JS-1/
 
 to login into this project use data: 
 
@@ -13,26 +13,26 @@ This is my third JavaScript Project and first advance project as a part of the p
 I was extremely excited when working on this amazing “Bankist App” that created with advance JS techniques. The content of this project rich that it includes very advanced topics like DOM elements, data transformations, map method, filter method, reduce method, chaining method, find and findIndex method, flat and flatMap method, math and rounding, …
 
 # Technologies & Techniques Used:
-•	JavaScript 
+	:pencil2:	JavaScript 
 
-•	ES6
+	:pencil2:	ES6
 
-•	DOM elements
+	:pencil2:	DOM elements
 
-•	Data transformations
+	:pencil2:	Data transformations
 
-•	Map method
+	:pencil2:	Map method
 
-•	Filter method
+	:pencil2:	Filter method
 
-•	Reduce method
+	:pencil2:	Reduce method
 
-•	Chaining method
+	:pencil2:	Chaining method
 
-•	Find and findIndex method
+	:pencil2:	Find and findIndex method
 
-•	Flat and flatMap method
+	:pencil2:	Flat and flatMap method
 
-•	Math and rounding
+	:pencil2:	Math and rounding
 
 
